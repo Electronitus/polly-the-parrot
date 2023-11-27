@@ -4,8 +4,6 @@ const fs = require('fs');
 
 const bot = new Discord.Client();
 
-const token = process.env.TOKEN;
-
 // Bot ID.
 const botID = "762723591556038676";
 
@@ -384,4 +382,4 @@ bot.on("messageReactionAdd", (reaction, user) => {
         };
 });
 
-bot.login(process.env.TOKEN);
+bot.login(process.env.DISCORD_TOKEN);
